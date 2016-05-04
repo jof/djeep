@@ -9,7 +9,8 @@ apt-get -y install git python-virtualenv mercurial gcc python-dev puppet puppetm
 
 mkdir -p ${INSTALL_DIR}
 cd ${INSTALL_DIR}
-git clone git://github.com/cloudbuilders/djeep.git
+mkdir -p ${DJEEP_DIR}
+git clone git://github.com/cloudbuilders/djeep.git ${DJEEP_DIR}
 git clone git://github.com/willkelly/openstack-puppet.git
 
 if [ -d /etc/puppet ]; then
